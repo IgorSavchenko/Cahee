@@ -20,9 +20,6 @@
 /*BODY*/
 body {
   font-family: 'Raleway', sans-serif;
-  /*font-family: 'Pacifico', cursive;*/
-  font-size: 17px;
-  font-weight: 300;
   color: #262626;
 }
 
@@ -83,20 +80,34 @@ body {
   color: #ff6033;
 }
 
-.header__info {}
+/*information about section*/
+.section__info--white {
+  color: #ffffff;
+}
+
+.section__info--center {
+  text-align: center;
+}
 
 .info__title {
   margin: 0;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 25px;
+  font-size: 90px;
+  font-weight: 700;
   text-transform: capitalize;
+  line-height: 27px;
+}
+
+.info__title--header {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 25px;
 }
 
 .info__text {
-  margin: 30px 0;
+  font-size: 17px;
+  font-weight: 300;
   line-height: 27px;
-  /*letter-spacing: ?*/
+  margin: 30px 0;
 }
 
 .info__button {
@@ -114,9 +125,10 @@ body {
 	box-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
 
+/*Scroll*/
 .header__scroll {
   position: absolute;
-  bottom: 69px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -133,4 +145,18 @@ body {
   width: 24px;
   height: 40px;
   object-fit: contain;
+}
+
+/*about section*/
+.about-section {
+  padding: 70px 0;
+  /*width: 1500px;
+	height: 700px;*/
+	background-color: #00c4c4;
+	background-image: radial-gradient(circle at 0 0, rgb(0, 196, 196),
+                    rgb(0, 183, 183) 32%,
+                    rgb(0, 173, 173) 68%,
+                    rgb(0, 156, 156)),
+                    linear-gradient(rgb(0, 196, 196),
+                    rgb(0, 196, 196));
 }
