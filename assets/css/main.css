@@ -1,10 +1,20 @@
-/*google fonts*/
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900');
+/*fonts*/
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+  @font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico-webfont.woff') format('woff');
+    /*regular*/
+    font-style: normal;
+
+  }
 
 /*all elements*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /*BODY*/
@@ -13,17 +23,114 @@ body {
   /*font-family: 'Pacifico', cursive;*/
   font-size: 17px;
   font-weight: 300;
+  color: #262626;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   /*1170 + left/right paddings (both 15px)*/
 }
 
 /*header*/
 .page-header {
+  position: relative;
   min-height: 100vh;
-  background: #f9f8fb url('../img/header-bg.jpg') 50% no-repeat;
+  padding-top: 220px;
+  background: #f9f8fb url('../img/header-bg.jpg') 50% 50% no-repeat;
   background-size: cover;
+}
+
+.header__logo {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 25px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-size: 0;
+}
+
+.nav__item {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.nav__item:not(:first-child) {
+  padding-left: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+  cursor: auto;
+  color: #262626;
+}
+
+.nav__link:hover {
+  border-top: 3px solid #ff6033;
+  padding-top: 9px;
+  color: #ff6033;
+}
+
+.header__info {}
+
+.info__title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.info__text {
+  margin: 30px 0;
+  line-height: 27px;
+  /*letter-spacing: ?*/
+}
+
+.info__button {
+  padding: 20px 25px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff6033;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.header__scroll {
+  position: absolute;
+  bottom: 69px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll__link {
+  display: block;
+}
+
+.scroll__link:hover {
+  opacity: 0.6;
+}
+
+.scroll__link img {
+  width: 24px;
+  height: 40px;
+  object-fit: contain;
 }
