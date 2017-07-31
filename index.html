@@ -6,7 +6,9 @@
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- external flexbox grid -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
     <!-- internal CSS styles -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- favicon -->
@@ -17,7 +19,7 @@
   <body>
     <!-- header section-->
     <header class="page-header">
-      <div id="home" class="container">
+      <div id="home" class="flex-container">
         <h1 class="header__logo">Cahee</h1>
         <nav class="header__nav">
           <ul class="nav__list">
@@ -29,33 +31,48 @@
             <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
           </ul>
         </nav>
-        <div class="section__info">
-          <h2 class="info__title info__title--header">fresh life</h2>
-          <p class="info__text">
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <button class="info__button">get free now</button>
+        <!-- row -->
+        <div class="row">
+          <!-- column -->
+          <div class="section__info section__info--header col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <h2 class="info__title info__title--header">fresh life</h2>
+            <p class="info__text">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <button class="info__button">get free now</button>
+          </div>
+          <!-- /.column -->
         </div>
+        <!-- /.row -->
         <div class="header__scroll">
           <a href="#about" class="scroll__link"><img src="assets/icons/scroll.png" alt="Scroll down"></a>
         </div>
       </div>
-      <!-- /.container -->
+      <!-- /.flex-container -->
     </header>
     <!-- /.page-header -->
     <!-- about section -->
   <section class="about-section">
-    <div id="about" class="container">
-      <img class="section__image" src="assets/img/about-us.png" alt="About us">
-      <div class="section__info section__info--white">
-        <h2 class="info__title">about us</h2>
-        <p class="info__text">
-          Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <br>
-          Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-        </p>
+    <div id="about" class="flex-container">
+      <!-- row -->
+      <div class="row">
+        <!-- column -->
+        <div class="section__photo col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img class="section__image" src="assets/img/about-us.png" alt="About us" >
+        </div>
+        <div class="section__info section__info--about col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h2 class="info__title">about us</h2>
+          <p class="info__text">
+            Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+          </p>
+          <p class="info__text">
+            Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+          </p>
+        </div>
       </div>
+      <!-- /.row -->
     </div>
-    <!-- /.container -->
+    <!-- /.flex-container -->
   </section>
   <!-- /.about-section -->
   </body>
