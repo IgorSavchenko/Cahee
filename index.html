@@ -17,11 +17,12 @@
   </head>
 <!-- BODY -->
   <body>
+
     <!-- header section-->
     <header class="page-header">
       <div id="home" class="flex-container">
-        <h1 class="header__logo">Cahee</h1>
         <nav class="header__nav">
+          <h1 class="header__logo">Cahee</h1>
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
             <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
@@ -31,49 +32,88 @@
             <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
           </ul>
         </nav>
-        <!-- row -->
-        <div class="row">
-          <!-- column -->
-          <div class="section__info section__info--header col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <h2 class="info__title info__title--header">fresh life</h2>
-            <p class="info__text">
+        <div class="header__info">
+            <h2 class="header__title">fresh life</h2>
+            <p class="header__description">
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
-            <button class="info__button">get free now</button>
-          </div>
-          <!-- /.column -->
-        </div>
-        <!-- /.row -->
-        <div class="header__scroll">
-          <a href="#about" class="scroll__link"><img src="assets/icons/scroll.png" alt="Scroll down"></a>
+            <button class="header__button">get free now</button>
         </div>
       </div>
       <!-- /.flex-container -->
+      <div class="header__scroll">
+        <a class="scroll__link" href="#about"></a>
+      </div>
     </header>
     <!-- /.page-header -->
+
     <!-- about section -->
-  <section class="about-section">
+  <section class="about">
     <div id="about" class="flex-container">
-      <!-- row -->
-      <div class="row">
-        <!-- column -->
-        <div class="section__photo col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <img class="section__image" src="assets/img/about-us.png" alt="About us" >
-        </div>
-        <div class="section__info section__info--about col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h2 class="info__title">about us</h2>
-          <p class="info__text">
-            Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-          </p>
-          <p class="info__text">
-            Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-          </p>
-        </div>
+      <div class="section__photo">
+        <img class="section__image" src="assets/img/about-us.png" alt="About us" >
       </div>
-      <!-- /.row -->
+      <div class="section__info section__info--light">
+        <h2 class="info__title">about us</h2>
+        <p class="info__text">
+          Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+        </p>
+        <p class="info__text">
+          Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+        </p>
+      </div>
     </div>
     <!-- /.flex-container -->
   </section>
   <!-- /.about-section -->
+
+  <!-- services section -->
+  <section class="services">
+    <div id="services" class="flex-container">
+      <ul class="services__list">
+        <li class="sercices__item">
+          <a class="services__link" href="#services"><span>Online Shopping</span></a>
+          <button class="services__button">
+            <img class="services__icon" src="assets/icons/shopping.svg" alt="Shopping">
+          </button>
+        </li>
+        <li class="sercices__item">
+          <a class="services__link" href="#services"><span>Quality Product</span></a>
+          <button class="services__button">
+            <img class="services__icon" src="assets/icons/quality.svg" alt="Quality">
+          </button>
+        </li>
+        <li class="sercices__item">
+          <a class="services__link" href="#services"><span>Domestic & International Delivery</span></a>
+          <button class="services__button">
+            <img class="services__icon" src="assets/icons/delivery.svg" alt="Delivery">
+          </button>
+        </li>
+        <li class="sercices__item">
+          <a class="services__link" href="#services"><span>Well Organized</span></a>
+          <button class="services__button">
+            <img class="services__icon" src="assets/icons/organized.svg" alt="Well Organized">
+          </button>
+        </li>
+      </ul>
+      <div class="section__info section__info--light section__info--center">
+        <h2 class="info__title">our services</h2>
+      </div>
+    </div>
+    <!-- /#services.flex-container -->
+  </section>
+  <!-- /.services-section -->
+  <!-- gallery -->
+  <section class="gallery">
+    <div id="gallery" class="flex-container">
+
+    </div>
+    <!-- /#gallery.flex-container -->
+  </section>
+  <!-- /.gallery -->
+
+
+
+
   </body>
 </html>
