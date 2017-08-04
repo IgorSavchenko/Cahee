@@ -77,6 +77,10 @@ body {
   line-height: 25px;
 }
 
+.header__logo--mini {
+  font-size: 25px;
+}
+
 .nav__list {
   width: 557px;
   margin: 0;
@@ -201,6 +205,8 @@ body {
 
 .section__info--center {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .info__title {
@@ -208,6 +214,10 @@ body {
   font-size: 90px;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.info__title--center {
+  text-align: center;
 }
 
 .info__text {
@@ -253,7 +263,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*pointer-events: none;*/
+  pointer-events: none;
 }
 
 .services__link span {
@@ -275,9 +285,6 @@ body {
   background: #fff;
   outline: none;
   position: relative;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
 }
 
 .services__button::before {
@@ -296,3 +303,96 @@ body {
 }
 
 /*gallery*/
+.gallery {
+  padding: 100px 0 120px;
+	background-color: #ffe92f;
+}
+
+.gallery .section__info {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gallery .info__text {
+  margin: 30px 0;
+}
+
+.gallery__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /*overflow: hidden;*/
+}
+
+.gallery__item {
+  width: 50%;
+  padding: 15px;
+}
+
+.gallery__item--small {
+  width: 33.3333333%;
+
+}
+
+.gallery__item--hero {
+  width: 66.6666666%;
+}
+
+.gallery__link {
+  display: block;
+  pointer-events: none;
+}
+
+.gallery__picture {
+  display: block;
+  max-width: 100%;
+  /*background: #00c4c4;*/
+  /*box-shadow: 0 2px 5px rgba(0,0,0,.5);*/
+  /*object-fit: cover;*/
+}
+
+.gallery__button {
+  display: block;
+  margin: 35px auto 0;
+  padding: 15px;
+  width: 200px;
+  height: 55px;
+  border: none;
+  outline: none;
+  background: #5585a2;
+  box-shadow: 0 2px 5px rgba(0,0,0,.5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*footer*/
+.page__footer {
+  height: 90px;
+  padding: 15px;
+  background-color: #262626;
+  color: #b9b9b9;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.footer__info{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer__info span {
+  font-weight: 700;
+  color: #ff2b58;
+}
