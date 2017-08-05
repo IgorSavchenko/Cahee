@@ -446,9 +446,12 @@ body {
   object-fit: cover;
 }
 
-.article__image::after {
+.article__image::before {
   content: "";
-  background-image: linear-gradient(to top, rgba(0,0,0), rgba(255,255,255));
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, white, black);
 }
 
 .article__info {
@@ -553,7 +556,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .form__name,
@@ -573,13 +575,13 @@ body {
 
 .form__text {
   height: 250px;
+  padding-top: 20px;
 }
 
 .form__name::placeholder,
 .form__email::placeholder,
 .form__number::placeholder,
 .form__text::placeholder {
-  padding-top: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   font-weight: 300;
