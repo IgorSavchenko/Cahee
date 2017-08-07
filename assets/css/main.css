@@ -143,14 +143,10 @@ body {
 
 .scroll__link {
   display: block;
-  width: 24px;
-  height: 40px;
-  /*background: url('../icons/scroll.png') 50% 50% no-repeat;*/
-  /*background-size: cover;*/
 }
 
-.scroll__link:hover {
-  opacity: 0.6;
+.scroll__link:hover svg {
+  opacity: 0.5;
 }
 
 /*about section*/
@@ -245,11 +241,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .services__link span {
   text-align: center;
+}
+
+.services__link:hover {
+  background: #9d9d9d;
 }
 
 .services__button {
@@ -296,7 +296,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   overflow-x: auto;
 }
 
@@ -326,14 +326,14 @@ body {
   pointer-events: none;
 }
 
-.gallery__item--small .gallery__link:first-child {
-  padding-bottom: 30px;
-}
-
 .gallery__picture {
   max-width: 100%;
-  /*box-shadow: 0 2px 5px rgba(0,0,0,.5);*/
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
   object-fit: cover;
+}
+
+.gallery__picture--hero {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .gallery__button {
@@ -444,7 +444,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 80%, black);
+  /*background: linear-gradient(to bottom, rgba(0,0,0,0.5) 80%, black);*/
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0.1));
 }
 
 .article__image {
@@ -482,14 +483,13 @@ body {
 }
 
 .article__date {
-  width: 60px;
-  height: 60px;
   position: absolute;
   top: 30px;
   left: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
   background: rgba(38, 38, 38, 0.5);
-  /*opacity: 0.5;*/
   text-align: center;
   text-transform: uppercase;
   line-height: 25px;
@@ -556,6 +556,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .form__name,
@@ -565,7 +566,7 @@ body {
   width: 500px;
   height: 50px;
   margin: 7.5px 0;
-  padding-left: 20px;
+  padding: 0 20px;
   background: #00c4c4;
   outline: none;
   border: none;
@@ -575,7 +576,14 @@ body {
 
 .form__text {
   height: 250px;
-  padding-top: 20px;
+  padding: 20px;
+}
+
+.form__name:focus,
+.form__email:focus,
+.form__number:focus,
+.form__text:focus {
+  border-left: 5px solid #355b82;
 }
 
 .form__name::placeholder,
@@ -586,6 +594,23 @@ body {
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
+  color: #ffffff;
+}
+
+.contact__button {
+  display: block;
+  margin: 7.5px 0;
+  /*padding: 15px;*/
+  width: 200px;
+  height: 55px;
+  border: none;
+  outline: none;
+  background: #355b82;
+  box-shadow: 0 2px 5px rgba(0,0,0,.5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
