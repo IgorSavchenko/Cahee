@@ -145,8 +145,8 @@ body {
   display: block;
   width: 24px;
   height: 40px;
-  background: url('../icons/scroll.png') 50% 50% no-repeat;
-  background-size: cover;
+  /*background: url('../icons/scroll.png') 50% 50% no-repeat;*/
+  /*background-size: cover;*/
 }
 
 .scroll__link:hover {
@@ -437,25 +437,25 @@ body {
   padding: 0;
 }
 
-.article__image {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-.article__image::before {
+.blog__article::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to bottom, white, black);
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 80%, black);
+}
+
+.article__image {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .article__info {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -488,8 +488,8 @@ body {
   top: 30px;
   left: 30px;
   border-radius: 5px;
-  background-color: #262626;
-  opacity: 0.5;
+  background: rgba(38, 38, 38, 0.5);
+  /*opacity: 0.5;*/
   text-align: center;
   text-transform: uppercase;
   line-height: 25px;
