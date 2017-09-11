@@ -816,8 +816,16 @@ button:hover {
   align-items: center;
 }
 .contact__info {
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
+  margin-left: 0;
+}
+.contact__title {
+  text-align: center;
+  display: inline-block;
+}
+.contact__description {
+  display: inline;
 }
 .contact__form {
   align-items: center;
